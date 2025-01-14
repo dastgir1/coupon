@@ -1,0 +1,53 @@
+#coupon-actions {
+	display: flex;
+	gap: 5px;
+}
+#add-coupon-btn,
+add-coupon-btn {
+	background-color: #12a5d4;
+	border-color: #12a5d4;
+	transition: 0.2s;
+}
+@media (max-width: 991.98px) {
+	#table-created-label,
+	#table-created-value,
+	#table-creator-label,
+	#table-creator-value,
+	#table-expiry-label,
+	#table-expiry-value {
+		display: none;
+	}
+}
+@media (max-width: 576px) {
+	#table-consumed-label,
+	#table-consumed-value {
+		display: none;
+	}
+}
+@media (max-width: 400px) {
+	#table-available-label,
+	#table-available-value {
+		display: none;
+	}
+}
+@media (min-width: 992px) {
+	#info-dropdown {
+		display: none;
+	}
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#dropdown-available,
+	#dropdown-consumed {
+		display: none !important;
+	}
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+	#dropdown-available {
+		display: none !important;
+	}
+}
+@media (min-width: 400px) and (max-width: 575.98) {
+	#dropdown-consumed {
+		display: initial !important;
+	}
+}

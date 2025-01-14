@@ -1,0 +1,66 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template auth_coupsign/expirecode
+
+    TODO describe template expirecode
+
+    Example context (json):
+    {
+    }
+}}
+  <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center text-info">Expired Code</h3>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped" id="mytable">
+                            <thead>
+                              <tr>
+                                <th scope="col">#ID</th>
+                                <th scope="col">Code</th>
+                                <th scope="col">Company Name</th>
+                                <th scope="col">Number of allowed uses</th>
+                                <th scope="col">Consumed</th> 
+                                <th scope="col">Start Date</th>
+                                <th scope="col">Expiry Date</th>
+                                <th scope="col">creation Date</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                            {{# expcoupon}}
+                              <tr>
+                                <th scope="row">{{id}}</th>
+                                <td>{{code}}</td>
+                                <td>{{companyname}}</td>
+                                <td>{{usage_count}}</td>
+                                <td>{{consumed}}</td>
+                                <td>{{start_date}}</td>
+                                <td>{{expiry_date}}</td>
+                                <td>{{creation_date}}</td>
+                              </tr>
+                         {{/ expcoupon}}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,9 @@
+ #page-auth-coupsign-coupform{
+    #id_couponform{
+        border: 1px solid lightgray;
+        max-width: 700px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: var(--color_black_haze_approx);
+    }
+}
